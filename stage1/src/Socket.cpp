@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #include "Socket.h"
 #include "InetAddress.h"
 #include "util.h"

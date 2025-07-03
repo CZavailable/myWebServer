@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #include "Buffer.h"
 #include <string.h>
 #include <iostream>

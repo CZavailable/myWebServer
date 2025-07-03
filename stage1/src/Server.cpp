@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #include "Server.h"
 #include "Socket.h"
 #include "Acceptor.h"

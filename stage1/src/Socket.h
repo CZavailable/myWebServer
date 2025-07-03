@@ -1,10 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
-
 #pragma once
 
 class InetAddress;

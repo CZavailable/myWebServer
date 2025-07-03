@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #include "Connection.h"
 #include "Socket.h"
 #include "Channel.h"

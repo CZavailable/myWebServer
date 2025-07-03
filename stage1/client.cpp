@@ -1,16 +1,16 @@
 #include <iostream>
 #include <unistd.h>
 #include <string.h>
-#include "src/util.h"
-#include "src/Buffer.h"
-#include "src/InetAddress.h"
-#include "src/Socket.h"
+#include "util.h"
+#include "Buffer.h"
+#include "InetAddress.h"
+#include "Socket.h"
 
 using namespace std;
 
 int main() {
     Socket *sock = new Socket();
-    InetAddress *addr = new InetAddress("127.0.0.1", 1234);
+    InetAddress *addr = new InetAddress("192.168.40.129", 1234);
     sock->connect(addr);
 
     int sockfd = sock->getFd();

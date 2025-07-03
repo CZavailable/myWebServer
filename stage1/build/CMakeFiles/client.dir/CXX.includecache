@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/Buffer.h
+string
+-
+
+../src/InetAddress.h
+arpa/inet.h
+-
+
+../src/Socket.h
+
+../src/util.h
+
+/home/cz/MyProject/mywebserver/stage1/client.cpp
+iostream
+-
+unistd.h
+-
+string.h
+-
+util.h
+/home/cz/MyProject/mywebserver/stage1/util.h
+Buffer.h
+/home/cz/MyProject/mywebserver/stage1/Buffer.h
+InetAddress.h
+/home/cz/MyProject/mywebserver/stage1/InetAddress.h
+Socket.h
+/home/cz/MyProject/mywebserver/stage1/Socket.h
+

@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #include "Epoll.h"
 #include "util.h"
 #include "Channel.h"

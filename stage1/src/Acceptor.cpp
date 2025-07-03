@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #include "Acceptor.h"
 #include "Socket.h"
 #include "InetAddress.h"
@@ -11,7 +5,7 @@
 
 Acceptor::Acceptor(EventLoop *_loop) : loop(_loop), sock(nullptr), acceptChannel(nullptr){
     sock = new Socket();
-    InetAddress *addr = new InetAddress("127.0.0.1", 1234);
+    InetAddress *addr = new InetAddress("192.168.40.129", 1234);
     sock->bind(addr);
     // sock->setnonblocking();
     sock->listen(); 

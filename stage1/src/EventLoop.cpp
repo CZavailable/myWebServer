@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #include "EventLoop.h"
 #include "Epoll.h"
 #include "Channel.h"

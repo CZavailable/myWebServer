@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #pragma once
 #include <sys/epoll.h>
 #include <vector>
