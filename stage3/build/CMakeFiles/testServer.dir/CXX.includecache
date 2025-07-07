@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Buffer.h
+string
+-
+common.h
+../include/common.h
+
+../include/common.h
+
+/home/cz/MyProject/mywebserver/stage3/src/Buffer.cpp
+Buffer.h
+/home/cz/MyProject/mywebserver/stage3/src/Buffer.h
+

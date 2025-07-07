@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/testServer.dir/test/testServer.cpp.o CMakeFiles/testServer.dir/src/Buffer.cpp.o CMakeFiles/testServer.dir/src/ThreadPool.cpp.o  -o ../bin/testServer  -lpthread 
