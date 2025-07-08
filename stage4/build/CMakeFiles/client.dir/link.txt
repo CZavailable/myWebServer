@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/client.dir/test/client.cpp.o CMakeFiles/client.dir/src/Buffer.cpp.o  -o ../bin/client 
