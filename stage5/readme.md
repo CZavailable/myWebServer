@@ -1,0 +1,1 @@
+增加EventLoopThread和EventLoopThreadPool类，EventLoopThreadPool类管理EventLoopThread类，此时与线程池相关的代码不需要再由TcpServer类管理，而是直接交给EventLoopThreadPool和EventLoopThread，使得代码各个模块直接的耦合度更低。
