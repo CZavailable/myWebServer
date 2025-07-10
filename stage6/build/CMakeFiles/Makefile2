@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/cz/MyProject/mywebserver/stage6/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/testHttpContext.dir/all
 all: CMakeFiles/http_server.dir/all
 all: CMakeFiles/testServer.dir/all
 all: CMakeFiles/client.dir/all
@@ -66,12 +67,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/testHttpContext.dir/clean
 clean: CMakeFiles/http_server.dir/clean
 clean: CMakeFiles/testServer.dir/clean
 clean: CMakeFiles/client.dir/clean
 clean: CMakeFiles/echo_server.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testHttpContext.dir
+
+# All Build rule for target.
+CMakeFiles/testHttpContext.dir/all:
+	$(MAKE) -f CMakeFiles/testHttpContext.dir/build.make CMakeFiles/testHttpContext.dir/depend
+	$(MAKE) -f CMakeFiles/testHttpContext.dir/build.make CMakeFiles/testHttpContext.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles --progress-num=36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Built target testHttpContext"
+.PHONY : CMakeFiles/testHttpContext.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testHttpContext.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cz/MyProject/mywebserver/stage6/build/CMakeFiles 16
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testHttpContext.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cz/MyProject/mywebserver/stage6/build/CMakeFiles 0
+.PHONY : CMakeFiles/testHttpContext.dir/rule
+
+# Convenience name for target.
+testHttpContext: CMakeFiles/testHttpContext.dir/rule
+
+.PHONY : testHttpContext
+
+# clean rule for target.
+CMakeFiles/testHttpContext.dir/clean:
+	$(MAKE) -f CMakeFiles/testHttpContext.dir/build.make CMakeFiles/testHttpContext.dir/clean
+.PHONY : CMakeFiles/testHttpContext.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/http_server.dir
@@ -107,7 +136,7 @@ CMakeFiles/http_server.dir/clean:
 CMakeFiles/testServer.dir/all:
 	$(MAKE) -f CMakeFiles/testServer.dir/build.make CMakeFiles/testServer.dir/depend
 	$(MAKE) -f CMakeFiles/testServer.dir/build.make CMakeFiles/testServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles --progress-num=36,37,38,39 "Built target testServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles --progress-num=52,53,54,55 "Built target testServer"
 .PHONY : CMakeFiles/testServer.dir/all
 
 # Build rule for subdir invocation for target.

@@ -87,3 +87,18 @@ target_include_directories(http_server PRIVATE http)
 target_link_libraries(http_server PRIVATE Threads::Threads)
 
 
+# 添加可执行文件
+add_executable(testHttpContext  
+               test/testHttpContext.cpp
+               ${SOURCES1}
+               ${SOURCES4})       
+               
+
+# 包含头文件目录
+target_include_directories(testHttpContext PRIVATE tcp)
+target_include_directories(testHttpContext PRIVATE base)
+target_include_directories(testHttpContext PRIVATE http)
+
+# 添加依赖库
+target_link_libraries(testHttpContext PRIVATE Threads::Threads)
+
