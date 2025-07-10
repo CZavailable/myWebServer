@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cz/MyProject/mywebserver/stage6/http/HttpRequest.cpp
+map
+-
+string
+-
+iostream
+-
+HttpRequest.h
+/home/cz/MyProject/mywebserver/stage6/http/HttpRequest.h
+
+/home/cz/MyProject/mywebserver/stage6/http/HttpRequest.h
+string
+-
+map
+-
+

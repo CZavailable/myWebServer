@@ -1,0 +1,6 @@
+/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles/rebuild_cache.dir
+/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles/edit_cache.dir
+/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles/http_server.dir
+/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles/testServer.dir
+/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles/client.dir
+/home/cz/MyProject/mywebserver/stage6/build/CMakeFiles/echo_server.dir
