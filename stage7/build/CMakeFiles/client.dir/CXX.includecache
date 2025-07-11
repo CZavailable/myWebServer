@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../base/common.h
+
+../tcp/Buffer.h
+string
+-
+common.h
+../tcp/common.h
+
+/home/cz/MyProject/mywebserver/stage7/tcp/Buffer.cpp
+Buffer.h
+/home/cz/MyProject/mywebserver/stage7/tcp/Buffer.h
+
+/home/cz/MyProject/mywebserver/stage7/tcp/Buffer.h
+string
+-
+common.h
+/home/cz/MyProject/mywebserver/stage7/tcp/common.h
+
+/home/cz/MyProject/mywebserver/stage7/test/client.cpp
+iostream
+-
+string
+-
+unistd.h
+-
+string.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+stdlib.h
+-
+Buffer.h
+/home/cz/MyProject/mywebserver/stage7/test/Buffer.h
+
