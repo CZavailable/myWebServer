@@ -1,0 +1,30 @@
+file(REMOVE_RECURSE
+  "../bin/client"
+  "../bin/client.pdb"
+  "CMakeFiles/client.dir/base/CurrentThread.cpp.o"
+  "CMakeFiles/client.dir/http/HttpContext.cpp.o"
+  "CMakeFiles/client.dir/http/HttpRequest.cpp.o"
+  "CMakeFiles/client.dir/http/HttpResponse.cpp.o"
+  "CMakeFiles/client.dir/http/HttpServer.cpp.o"
+  "CMakeFiles/client.dir/log/AsyncLogging.cpp.o"
+  "CMakeFiles/client.dir/log/LogFile.cpp.o"
+  "CMakeFiles/client.dir/log/LogStream.cpp.o"
+  "CMakeFiles/client.dir/log/Logging.cpp.o"
+  "CMakeFiles/client.dir/tcp/Acceptor.cpp.o"
+  "CMakeFiles/client.dir/tcp/Buffer.cpp.o"
+  "CMakeFiles/client.dir/tcp/Channel.cpp.o"
+  "CMakeFiles/client.dir/tcp/Epoll.cpp.o"
+  "CMakeFiles/client.dir/tcp/EventLoop.cpp.o"
+  "CMakeFiles/client.dir/tcp/EventLoopThread.cpp.o"
+  "CMakeFiles/client.dir/tcp/EventLoopThreadPool.cpp.o"
+  "CMakeFiles/client.dir/tcp/TcpConnection.cpp.o"
+  "CMakeFiles/client.dir/tcp/TcpServer.cpp.o"
+  "CMakeFiles/client.dir/test/client.cpp.o"
+  "CMakeFiles/client.dir/timer/Timer.cpp.o"
+  "CMakeFiles/client.dir/timer/TimerQueue.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/client.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

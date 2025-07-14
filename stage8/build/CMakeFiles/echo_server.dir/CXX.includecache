@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../base/common.h
+
+/home/cz/MyProject/mywebserver/stage8/log/LogStream.cpp
+stdio.h
+-
+LogStream.h
+/home/cz/MyProject/mywebserver/stage8/log/LogStream.h
+
+/home/cz/MyProject/mywebserver/stage8/log/LogStream.h
+string
+-
+algorithm
+-
+cstring
+-
+iostream
+-
+assert.h
+-
+common.h
+/home/cz/MyProject/mywebserver/stage8/log/common.h
+

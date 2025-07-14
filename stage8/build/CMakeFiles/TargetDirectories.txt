@@ -1,0 +1,7 @@
+/home/cz/MyProject/mywebserver/stage8/build/CMakeFiles/rebuild_cache.dir
+/home/cz/MyProject/mywebserver/stage8/build/CMakeFiles/edit_cache.dir
+/home/cz/MyProject/mywebserver/stage8/build/CMakeFiles/http_server.dir
+/home/cz/MyProject/mywebserver/stage8/build/CMakeFiles/test_logstream.dir
+/home/cz/MyProject/mywebserver/stage8/build/CMakeFiles/testServer.dir
+/home/cz/MyProject/mywebserver/stage8/build/CMakeFiles/client.dir
+/home/cz/MyProject/mywebserver/stage8/build/CMakeFiles/echo_server.dir
