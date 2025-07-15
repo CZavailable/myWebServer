@@ -1,0 +1,75 @@
+#pragma once
+#include <functional>
+#include <memory>
+#include <string>
+#include "common.h"
+#include "TimeStamp.h"
+
+class EventLoop;
+class Channel;
+class Buffer;
+class HttpContext;
+
+class TcpConnection : public std::enable_shared_from_this<TcpConnection>
+{
+public:
+    DISALLOW_COPY_AND_MOVE(TcpConnection);
+    enum ConnectionState{
+        Invalid = 1,
+        Connected,
+        Disconnected
+    };
+    TcpConnection(EventLoop *_loop, int connfd, int connid);
+    ~TcpConnection();
+    
+    void read();
+    void write();
+
+    void setDeleteConnectionCallback(std::function<void(const std::shared_ptr<TcpConnection>&)> const& callback);
+    void setOnMessageCallback(std::function<void(const std::shared_ptr<TcpConnection>&)> const& callback);
+    void setOnConnectionCallback(std::function<void(const std::shared_ptr<TcpConnection>&)> const& callback);
+    void handleMessage();
+    void handleClose();
+    void handleWrite();
+
+    void connectionEstablished();
+    void connectionDestructor();
+    // void deleteConnectionChannel();
+    void updateTimeStamp(TimeStamp now);
+
+    Buffer* read_buf();
+    Buffer* send_buf();
+
+    void send(const std::string& msg);
+    void send(const char* msg, int len);
+    void send(const char* msg);
+
+    EventLoop* getLoop() const;
+    ConnectionState getState() const;
+    HttpContext* getContext() const;
+    TimeStamp getTimeStamp() const;
+    int getFd() const;
+    int getId() const;
+
+private:
+    EventLoop* loop;
+    int connfd;
+    int connid;
+    ConnectionState state;
+    TimeStamp timestamp;
+    
+    std::unique_ptr<Channel> channel;
+    std::unique_ptr<Buffer> read_Buffer;
+    std::unique_ptr<Buffer> send_Buffer;
+    std::unique_ptr<HttpContext> context;
+    
+    std::function<void(const std::shared_ptr<TcpConnection>&)> deleteConnectionCallback;
+    std::function<void(const std::shared_ptr<TcpConnection>&)> onMessageCallback;
+    std::function<void(const std::shared_ptr<TcpConnection>&)> onConnectionCallback;
+    
+    void readNonBlocking();
+    void readBlocking();
+    void writeNonBlocking();
+    void writeBlocking();
+};
+
