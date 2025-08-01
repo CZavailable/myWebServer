@@ -228,8 +228,8 @@ bool HttpContext::paraseRequest(const char* begin, int size){
             case HttpRequestParaseState::CR_LF_CR:{
                 if(ch == LF){
                     // 这就意味着遇到了空行，要进行解析请求体了
-                    if(request->getHeader().count("Content-Lenght")){
-                        if(atoi(request->getHeaderValue("Content-Lenght").c_str()) > 0){
+                    if(request->getHeader().count("Content-Length")){
+                        if(atoi(request->getHeaderValue("Content-Length").c_str()) > 0){
                             state = HttpRequestParaseState::BODY;
                         }else{
                             state = HttpRequestParaseState::COMPLETE;
