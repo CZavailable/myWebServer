@@ -1,6 +1,6 @@
 #pragma once
 // 自动关闭的时间，以秒为单位
-#define AUTOCLOSETIMEOUT 5
+#define AUTOCLOSETIMEOUT 70
 
 #include <functional>
 #include <memory>

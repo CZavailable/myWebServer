@@ -41,6 +41,7 @@ public:
     }
 
     void onMessage(const std::shared_ptr<TcpConnection>& conn){
+        // 这里需要处理粘包
         if (conn->getState() == TcpConnection::ConnectionState::Connected){
             std::cout << "Thread " << CurrentThread::tid() << " Message from clent " << conn->read_buf()->peekAllAsString().c_str() << std::endl;
             conn->send(conn->read_buf()->peekAllAsString().c_str());

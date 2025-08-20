@@ -48,6 +48,12 @@ void Acceptor::setNewConnectionCallback(std::function<void(int)> const &callback
 void Acceptor::create(){
     assert(listenfd == -1);
     listenfd = socket(AF_INET,SOCK_STREAM | SOCK_NONBLOCK | SOCK_CLOEXEC,IPPROTO_TCP);
+
+    // 端口快速复用和重启绑定
+    int on=1;
+    setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &on, sizeof(on));
+    setsockopt(listenfd, SOL_SOCKET, SO_REUSEPORT, &on, sizeof(on));
+
     if(listenfd == -1){
         std::cout << "Fail to creat lisen socket!" << std::endl;
     }
