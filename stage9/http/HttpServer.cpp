@@ -47,6 +47,7 @@ void HttpServer::onConnection(const TcpConnectionPtr& conn){
     }
 }
 
+// 处理消息
 void HttpServer::onMessage(const TcpConnectionPtr& conn){
     if(conn->getState() == TcpConnection::ConnectionState::Connected){
         // 保存最近一次的活跃时间
